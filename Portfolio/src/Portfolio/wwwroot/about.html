@@ -1,0 +1,79 @@
+﻿<div ng-show="InitialState == 'First'" margin-top: 5px">
+    <div style="width: 100%; margin-top: 10px; margin-bottom: 10px">
+        <div style="width: 200px; float: left; display: inline-block;">
+            <img src="images/me.jpg" class="img-circle">
+        </div>
+        <div style="display: inline-block;">
+            <div class="span8" style="width: 300px">
+                <h3>Łukasz Szustak</h3>
+                <h5><b>E-mail: </b>lukasz.szustak@gmail.com</h5>
+                <h5 style="text-align: justify">
+                    <b>O mnie: </b>Programista a zarazem pasjonat, który na co dzień pracuję w branży IT jako .NET developer.
+                    Absolwent Politechniki Śląskiej kierunku Mechatronika.
+                    Interesuję się szeroko rozumianą technologią, począwszy od elektroniki oraz robotyki,
+                    skończywszy na rozwoju oprogramowania. Interesuję się również sportami, w szczególności piłką nożna,
+                    w którą zarówno gram jak i oglądam :)
+                </h5>
+                <h5><b>Technologie: </b>.NET, WinForms, SQL, EntityFramework, Angular JS, JavaScript, HTML, CSS, GIT, WCF, ASP.NET </h5>
+            </div>
+
+            <a href="http://lszustak.awsome.pl/cv/Lukasz_Szustak_CV.pdf" download type="button" class="btn btn-default">
+                <span class="glyphicon glyphicon-download-alt"></span> Pobierz CV
+            </a>
+        </div>
+    </div>
+</div>
+
+<div ng-show="InitialState == 'Second'" style="margin-top: 5px; margin-bottom: 5px;">
+    <div style="width: 100%; margin-top: 10px; margin-bottom: 10px">
+        <div style="width: 200px; float: left; display: inline-block;">
+            <img src="images/me.jpg" class="img-circle">
+        </div>
+        <div style="display: inline-block;">
+            <div class="span8" style="width: 300px">
+                <a href="mailto:lukasz.szustak@gmail.com" type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-envelope"></span> Wyślij wiadomość e-mail
+                </a>
+                <a href="https://www.linkedin.com/in/%C5%82ukasz-szustak-536271b5/" type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-user"></span> LinkedIn
+                </a>
+
+                <table class="table table-list-search" style="margin-top: 10px">
+                    <thead>
+                        <tr>
+                            <th>Nazwa ceryfikatu</th>
+                            <th>Link</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--<tr>
+                            <td>Język angielski specjalistyczny</td>
+                            <td></td>
+                        </tr>-->
+                        <tr>
+                            <td>REST WCF Service in ASP.NET</td>
+                            <td><a class="btn btn-default" onclick="window.open('https://www.udemy.com/certificate/UC-O2USCTXV/');"><i class="glyphicon glyphicon-eye-open"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>Learn JavaScript for beginners</td>
+                            <td><a class="btn btn-default" onclick="window.open('https://www.udemy.com/certificate/UC-95C3N0GG/');"><i class="glyphicon glyphicon-eye-open"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>Regex Academy: An Introduction To Text Parsing Sorcery</td>
+                            <td><a class="btn btn-default" onclick="window.open('https://www.udemy.com/certificate/UC-FBIRMDIO/');"><i class="glyphicon glyphicon-eye-open"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>ASP.NET MVC - Enfoques Prácticos [En Construcción]</td>
+                            <td><a class="btn btn-default" onclick="window.open('https://www.udemy.com/certificate/UC-F7BGNHXX/');"><i class="glyphicon glyphicon-eye-open"></i></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="btn-group" role="group" aria-label="..." style="margin-bottom:10px">
+    <a href="#/about" type="button" class="btn btn-default" ng-click="InitialState = 'First'" ng-class="{'active-red': InitialState == 'First'}">1</a>
+    <a href="#/about" type="button" class="btn btn-default" ng-click="InitialState = 'Second'" ng-class="{'active-red': InitialState == 'Second'}">2</a>
+</div>

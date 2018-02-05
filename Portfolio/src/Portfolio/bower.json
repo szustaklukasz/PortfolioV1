@@ -1,0 +1,13 @@
+{
+  "name": "angular",
+  "version": "1.5.5",
+  "license": "MIT",
+  "ignore": [],
+  "dependencies": {
+    "angular": "1.6.4",
+    "angular-route": "1.6.4"
+  },
+  "resolutions": {
+    "angular": "1.6.4"
+  }
+}

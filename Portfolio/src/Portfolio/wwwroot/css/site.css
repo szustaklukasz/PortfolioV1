@@ -1,0 +1,267 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    background-color: #d1313c;
+    color: #fff;
+}
+
+.navbar-default .navbar-nav > .activee > a,
+.navbar-default .navbar-nav > .activee > a:hover,
+.navbar-default .navbar-nav > .activee > a:focus {
+    background-color: none;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    background-color: #fff;
+}
+
+.font-head {
+    font-family: "B Yekan", Tahoma;
+}
+
+.dropdown-large {
+    position: static !important;
+}
+
+.dropdown-menu-large {
+    margin-left: 80px;
+    margin-right: 80px;
+    padding: 20px 0px;
+}
+
+    .dropdown-menu-large > li > ul {
+        padding: 0;
+        margin: 0;
+    }
+
+        .dropdown-menu-large > li > ul > li {
+            list-style: none;
+        }
+
+            .dropdown-menu-large > li > ul > li > a {
+                display: block;
+                padding: 3px 20px;
+                clear: both;
+                font-weight: normal;
+                line-height: 1.428571429;
+                color: #d1313c;
+                white-space: normal;
+            }
+
+    .dropdown-menu-large > li ul > li > a:hover,
+    .dropdown-menu-large > li ul > li > a:focus {
+        text-decoration: none;
+        color: #262626;
+        background-color: #d1313c;
+    }
+
+    .dropdown-menu-large .disabled > a,
+    .dropdown-menu-large .disabled > a:hover,
+    .dropdown-menu-large .disabled > a:focus {
+        color: #d1313c;
+    }
+
+        .dropdown-menu-large .disabled > a:hover,
+        .dropdown-menu-large .disabled > a:focus {
+            text-decoration: none;
+            background-color: transparent;
+            background-image: none;
+            cursor: not-allowed;
+        }
+
+    .dropdown-menu-large .dropdown-header {
+        color: #d1313c;
+        font-size: 15px;
+    }
+
+@media (max-width: 300px) {
+    .dropdown-menu-large {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+        .dropdown-menu-large > li {
+            margin-bottom: 30px;
+        }
+
+            .dropdown-menu-large > li:last-child {
+                margin-bottom: 0;
+            }
+
+        .dropdown-menu-large .dropdown-header {
+            padding: 3px 15px !important;
+        }
+}
+
+.dropdown-menu-large .boldh {
+    font-weight: bolder;
+    font-style: normal;
+}
+
+.show-on-hover:hover > ul.dropdown-menu {
+    display: block;
+}
+
+/**/
+/* Main carousel style */
+.carousel {
+    width: 100%;
+    height: 100%;
+    text-align: -webkit-center;
+}
+
+/* Indicators list style */
+.article-slide .carousel-indicators {
+    /*bottom: 0;
+    left: 0;
+    margin-left: 5px;*/
+    /*width: 450px;*/
+    /*text-align: -webkit-center;*/
+}
+    /* Indicators list style */
+    .article-slide .carousel-indicators li {
+        border: medium none;
+        border-radius: 0;
+        /*float: left;*/
+        height: 54px;
+        margin-bottom: 5px;
+        margin-left: 0;
+        margin-right: 5px !important;
+        margin-top: 0;
+        width: 100px;
+    }
+    /* Indicators images style */
+    .article-slide .carousel-indicators img {
+        border: 2px solid #FFFFFF;
+        float: left;
+        height: 54px;
+        left: 0;
+        width: 100px;
+    }
+    /* Indicators active image style */
+    .article-slide .carousel-indicators .active img {
+        border: 2px solid #d1313c;
+        opacity: 0.7;
+    }
+
+/*
+ * To see in action, go to http://jsfiddle.net/seydoggy/9jv5e8d1/
+ */
+.panel.panel-horizontal {
+    display: table;
+    width: 100%;
+}
+
+    .panel.panel-horizontal > .panel-heading, .panel.panel-horizontal > .panel-body, .panel.panel-horizontal > .panel-footer {
+        display: table-cell;
+    }
+
+    .panel.panel-horizontal > .panel-heading, .panel.panel-horizontal > .panel-footer {
+        width: 25%;
+        border: 0;
+        vertical-align: middle;
+    }
+
+    .panel.panel-horizontal > .panel-heading {
+        border-right: 1px solid #ddd;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 4px;
+    }
+
+    .panel.panel-horizontal > .panel-footer {
+        border-left: 1px solid #ddd;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 4px;
+    }
+
+.panel {
+    margin-bottom: 5px !important;
+}
+
+.panel-default > .panel-heading-custom {
+    background: #d1313c;
+    color: white;
+}
+
+.active-red{
+  background-color:#d1313c !important;
+  color: white !important;
+}
+
+/**/
+
+.jk-slider{
+    width:100%;
+}
+/*          Hero Headers        */
+/********************************/
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+      -webkit-transform: translate3d(-50%,-50%,0);
+         -moz-transform: translate3d(-50%,-50%,0);
+          -ms-transform: translate3d(-50%,-50%,0);
+           -o-transform: translate3d(-50%,-50%,0);
+              transform: translate3d(-50%,-50%,0);
+}
+.hero h1 {
+    font-size: 6em;    
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+.fade-carousel .carousel-inner .item .hero {
+    opacity: 0;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s; 
+}
+.fade-carousel .carousel-inner .item.active .hero {
+    opacity: 1;
+}

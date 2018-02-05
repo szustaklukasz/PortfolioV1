@@ -1,0 +1,38 @@
+﻿<div class="container" style="margin-top:5px" ng-show="InitialState == 'First'">
+    <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+            <div class="panel panel-default panel-horizontal">
+                <div class="panel-heading panel-heading-custom">
+                    <h3 class="panel-title">Opis</h3>
+                </div>
+                <div class="panel-body" style="text-align: justify">Aplikacja służąca do pobierania plików video oraz audio
+                z serwisów YouTube, cda oraz trt.</div>
+            </div>
+            <div class="panel panel-default panel-horizontal">
+                <div class="panel-heading panel-heading-custom">
+                    <h3 class="panel-title">Cel i założenia</h3>
+                </div>
+                <div class="panel-body" style="text-align: justify">Celem ninejszej aplikacji jest umożliwienie pobrania
+                plików video oraz audio ze znanych serwisów. Pobranie może być zrealizowanie za pomocą wyszukiwania po frazie,
+                bądź bezpośrednio przez podanie linku. Ponadto aplikacja umożliwia śledzenie postępu sciąganych plików.</div>
+            </div>
+            <div class="panel panel-default panel-horizontal">
+                <div class="panel-heading panel-heading-custom">
+                    <h3 class="panel-title">Technologie</h3>
+                </div>
+                <div class="panel-body"  style="text-align: justify">
+                    C#, ASP.NET, AngularJS, JavaScript, HTML, CSS
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div ng-show="InitialState == 'Second'" style="text-align:-webkit-center; margin-top: 5px">
+    <img class="img-responsive" alt="" title="Schemat projektu" src="images/easydownloader.jpg" width="600" height="400">
+</div>
+
+<div class="btn-group" role="group" aria-label="..." style="margin-bottom:10px">
+    <a href="#/easydownloader" type="button" class="btn btn-default" ng-click="InitialState = 'First'" ng-class="{'active-red': InitialState == 'First'}">1</a>
+    <a href="#/easydownloader" type="button" class="btn btn-default" ng-click="InitialState = 'Second'" ng-class="{'active-red': InitialState == 'Second'}">2</a>
+</div>
